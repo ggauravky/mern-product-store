@@ -1,0 +1,30 @@
+{
+  "name": "mern-product-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggauravky/mern-product-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggauravky/mern-product-store/issues"
+  },
+  "homepage": "https://github.com/ggauravky/mern-product-store#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "dotnet": "^1.1.4",
+    "express": "^4.19.2",
+    "mongoose": "^8.20.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
