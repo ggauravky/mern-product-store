@@ -1,17 +1,20 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import { connectDB } from './config/db.js';
+import express from "express";
+import dotenv from "dotenv";
+import { connectDB } from "./config/db.js";
+import Product from "./models/product.model.js";
+import mongoose from "mongoose";
+
+import ProductRouter from "./routes/product.route.js";
 
 dotenv.config();
 
 const app = express();
 
-app.get('/products', (req, res) => {});
+app.use(express.json());
 
-console.log(process.env.MONGO_URI);
+app.use("/api/products", ProductRouter);
 
 app.listen(5000, () => {
-    connectDB();
+  connectDB();
   console.log("server started at http://localhost:5000");
 });
-
