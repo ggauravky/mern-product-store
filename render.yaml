@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mern-product-store
+    env: node
+    buildCommand: npm install && npm install --prefix frontend && npm run build --prefix frontend
+    startCommand: node backend/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false

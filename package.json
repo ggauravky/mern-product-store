@@ -4,9 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/server.js",
-    "postinstall": "echo Build completed successfully"
+    "build": "npm install && cd frontend && npm install && npm run build",
+    "start": "node backend/server.js"
   },
   "type": "module",
   "repository": {
