@@ -2,7 +2,9 @@ services:
   - type: web
     name: mern-product-store
     env: node
-    buildCommand: npm install && npm install --prefix frontend && npm run build --prefix frontend
+    region: oregon
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build && cd ..
     startCommand: node backend/server.js
     envVars:
       - key: NODE_ENV
