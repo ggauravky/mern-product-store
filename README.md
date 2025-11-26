@@ -142,10 +142,12 @@ mern-product-store/
 ## 🎨 Screenshots
 
 ### Light Mode
+
 ![Light Mode](01.png)
 Modern, clean interface with smooth animations and gradient effects.
 
 ### Dark Mode
+
 ![Dark Mode](02.png)
 Eye-friendly dark theme for comfortable night-time browsing.
 
